@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        .container img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .container {
+            position: relative;
+            width: 25%;
+            height: auto;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+            height: 300px;
+        }
+
+        .overlay {
+            position: absolute;
+            transition: 0.7s ease;
+            opacity: 0;
+            width: 300px;
+            height: 0;
+            top: 0;
+            right: 20px;
+            background-color: lightblue;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <h1>Slide in Overlay from top to bottom</h1>
+        <h2>Move the cursor over the image to see the effect.</h2>
+        <div class="container">
+            <img src="jtp.png">
+            <div class="overlay"></div>
+        </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of the masking</title>
+
+    <head>
+        <style>
+            div img {
+                width: 200px;
+                height: 200px;
+            }
+
+            #masked {
+                width: 300px;
+                height: 300px;
+                -webkit-mask-box-image: url(../../../MYwebsite/img/blackbeckground.jpg) 25;
+
+            }
+        </style>
+    </head>
+
+<body>
+    <center>
+        <div id="one">
+            <h2> Original Images </h2>
+            <img src="../../../MYwebsite/img/blackbeckground.jpg">
+            <img src="../../../MYwebsite/img/backgraund1.jpg">
+        </div>
+        <h2> After masking </h2>
+        <img src="../../../MYwebsite/img/blackbeckground.jpg" id="masked">
+    </center>
+</body>
+
+</html>

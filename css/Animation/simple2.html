@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aninmatoin2</title>
+    <style>   
+        div  
+        {  
+        width:200px;  
+        height:200px;  
+        animation:demo 2s ease-in infinite, trans 2s ease-in-out infinite;  
+        border-radius:40px;  
+        }  
+          
+        @keyframes demo  
+        {  
+         0% {background:red;}  
+         50% {background:yellow; width:100px; height:100px;}  
+         100% {background:green; width:300px; height:300px;}  
+        }  
+        @keyframes trans  
+        {  
+         0% {transform:translate(0px) scale(1.4) rotate(80deg);}  
+         50% {transform:translate(10px) scale(1.2) rotate(40deg);}  
+         100% {transform:translate(350px) scale(1) rotate(0deg);}  
+        }  
+          
+        </style>  
+        </head>  
+        <body>  
+          
+        <div></div>  
+        <p>After the completion of the Animation, the element retracts to its original State </p>  
+          
+        </body>  
+        </html>  

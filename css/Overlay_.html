@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay</title>
+    <style>
+        .container img {
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .container {
+            position: absolute;
+            height: auto;
+            width: 25%;
+
+        }
+
+        .overlay {
+            position: absolute;
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            transition: 0.5s ease;
+            top: 0;
+            left: 20px;
+            opacity: 0;
+
+
+        }
+
+        .container:hover .overlay {
+            opacity: .5;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Hi I Am Ajay </h1>
+        <h2>Welcome my new website for overlay</h2>
+        <div class="container">
+            <img src="background1.jpg" alt="Ohhhh! sorry Image not found!!!!">
+            <div class="overlay"></div>
+        </div>
+    </center>
+
+</body>
+
+</html>

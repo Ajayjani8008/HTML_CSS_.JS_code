@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> border-collapse property </title>
+    <!-- <style>
+        table {
+            border: 2px solid rgba(4, 4, 36, 0.527);
+            text-align: right;
+            font-size: 20px;
+            width: 80%;
+            height: 50%;
+        }
+
+        th {
+            border: 5px solid red;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        td {
+            border: 5px solid violet;
+            background-color: cyan;
+        }
+
+        #t1 {
+            border-collapse: separate;
+            border-spacing:10pt 1em;
+        } -->
+    <!-- </style> -->
+    <style>
+        body{
+            background-color: lightgray;
+            color: lightsalmon;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1 style="color: chartreuse;"> The border-collapse Property </h1>
+    <h2> border-collapse: separate; </h2>
+    <table id="t1">
+        <tr style="cursor: copy;">
+            <th> First_Name </th>
+            <th> Last_Name </th>
+            <th> Subject </th>
+            <th> Marks </th>
+        </tr>
+        <tr style="cursor: cell;">
+            <td> James </td>
+            <td style="cursor:all-scroll"> Gosling </td>
+            <td> Maths </td>
+            <td style="cursor:alias"> 92 </td>
+        </tr>
+        <tr>
+            <td style="cursor: no-drop;"> Alan </td>
+            <td style="cursor: ne-resize;"> Rickman </td>
+            <td style="cursor: grabbing;" >Maths </td>
+            <td style="cursor: crosshair;"> 89 </td>
+        </tr>
+        <tr>
+            <td  bgcolor="red"   style="display:inline-block;"> Sam </td>
+            <td> Mendes </td>
+            <td> Maths </td>
+            <td style="cursor:auto"> 82 </td>
+        </tr>
+    </table>
+</body>
+
+</html>

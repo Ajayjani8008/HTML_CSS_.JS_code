@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empoloyee Detail Table</title>
+    <link rel="stylesheet" href="/external.css" type="text/css">
+</head>
+
+<body>
+    <form action="/action.php">
+        <table width="50%" height="50%" border="10">
+            <tr>
+                <td colspan="2" align="center">Empoloyee Detail Table</td>
+            </tr>
+            <tr>
+                <td>Emp. ID</td>
+                <td>
+
+                    <input type="text" name="Emp.ID" placeholder="Enter Empoloyee Id ">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Emp.Name</td>
+                <td>
+
+                    <input type="text" name="Emp.Name" placeholder="Enter Empoloyee Name ">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+
+                    <textarea name="Address" placeholder="Enter your Address " id="101" rows=5></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+
+                    <select name="City" id="City">
+                        <option value="bhavnagar">bhavnagar</option>
+                        <option value="vadodara">vadodara</option>
+                        <option value="ahemdabad">ahemdabad</option>
+                        <option value="surat">surat</option>
+                        <option value="vidya nagar">vidya nagar</option>
+                        <option value="dihor">dihor</option>
+                    </select>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+
+                    <select name="State" id="State">
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Rajsthan">Rajsthan</option>
+                        <option value="maharatra">maharatra</option>
+                        <option value="chhatisghdh">chhatisghdh</option>
+                        <option value="uttr pradesh">uttr pradesh </option>
+                        <option value="madhya pradesh">madhya pradesh</option>
+                    </select>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+
+                    <label for="102">
+                        <input type="radio" name="Gender" value="Male" id="102">Male
+                    </label>
+                    <label for="103">
+                        <input type="radio" name="Gender" value="Female" id="103">Female
+                    </label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td>
+
+                    <input type="text" name="Email ID" placeholder="Enter Email ID ">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile No.</td>
+                <td>
+
+                    <input type="text" name="Mobile No." placeholder="Enter Mobile No. ">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Post</td>
+                <td>
+
+                    <select name="Post" id="Post">
+                        <option value="Worker">Worker</option>
+                        <option value="Accountant">Accountant</option>
+                        <option value="Manager">Manager</option>
+
+                    </select>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>Salary</td>
+                <td>
+
+                    <input type="text" name="Salary" placeholder="Enter Empoloyee Salary">
+    </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </td>
+    </tr>
+
+
+
+    </table>
+    </form>
+
+</body>
+
+</html>

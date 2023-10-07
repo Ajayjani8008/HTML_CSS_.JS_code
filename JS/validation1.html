@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script>
+        function validationform() {
+            var name = document.myform.studentname.value;
+            var password = document.myform.studentpasswrod.value;
+            var subject1=document.myform.subject.value;
+            if (name == null || name == "") {
+                alert("name can not be null");
+                return false;
+
+            } else if (password.length < 6) {
+                alert("passwrod must be at lest 6  charator long");
+
+            }
+            if(subject1==""){
+                alert("choose your subject");
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+
+    <table>
+        <form name="myform">
+            <center>
+                <h1>Student Log In Form</h1>
+            </center>
+            <tr>
+                <td>
+                    <label>Enter Your Full Name : </label>
+                </td>
+                <td>
+                    <input type="text" name="studentname" placeholder="Enter your name ">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Enter Your Password :</label>
+                </td>
+                <td><input type="password" name="studentpasswrod" placeholder="Enter Your Password"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Select Your Subject</label>
+                </td>
+                <td> <select name="subject">
+                    <option value="No subject">Enter your subject</option>
+                        <option value="mathematics">mathematics</option>
+                        <option value="physics">physics</option>
+                        <option value="chemestry">chemestry</option>
+                        <option value="biology">biology</option>
+                        <option value="micro biology">micro biology</option>
+                        <option value="computer science">computer science</option>
+                        <option value="Electronics">Electronics</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter Your Last Year Marks:</label></td>
+                <td><input type="number" name="Marks"></td>
+            </tr><tr>
+                <td><label>Enter Your Adhar Number:</label></td>
+                <td><input type="number" name="adhar"></td>
+            </tr>
+            <tr>
+                <td><label>Enter Your Email Address:</label></td>
+                <td><input type="text" name="Email"></td>
+            </tr>
+            <tr>
+                <td><label>Enter Your Contact Number:</label></td>
+                <td><input type="text" name="Contact"></td>
+            </tr>
+            <tr>
+                <td><label>Enter Your Address:</label></td>
+                <td><textarea name="Address" cols="30" rows="4"></textarea>
+            </tr>
+
+            <tr>
+                <td>
+                    <label><input type="radio" value="Male" name="gender">Male</label>
+                    <label><input type="radio" value="Female" name="gender">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="Submit Data" onclick="validationform()">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>

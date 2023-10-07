@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPs</title>
+</head>
+<body>
+    <script>
+        // emp={id:102,name:"ajay",salary:40000}
+        // document.write(emp.id+" " +emp.name+" "+emp.salary);
+
+        // var emp=new Object();
+        // emp.id=101;
+        // emp.name="ajay_jani";
+        // emp.salary=43742;
+        // document.write(emp.id+" " +emp.name+" "+emp.salary);
+        function emp(id,name,salary){
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+            this.changeSalary=changeSalary;
+            function changeSalary(otherSalary){
+                this.salary=otherSalary;
+            }
+
+        }
+
+        e=new emp(103,"jani ajaykumar ",565634);
+        document.write(e.id+" " +e.name+" "+e.salary);
+        e.changeSalary(398039);
+        document.write("<br>"+e.id+" "+e.name+" "+e.salary);
+        
+
+
+    </script>
+    
+</body>
+</html>
